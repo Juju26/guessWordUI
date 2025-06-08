@@ -10,8 +10,8 @@ const keyboardRows = [
   ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '⌫']
 ];
 
-const WORDGUESS_APP_API_URL = 'http://localhost:8080/api/process'; // [TODO] Replace with actual API URL
-
+// const WORDGUESS_APP_API_URL = 'http://localhost:8080/api/process'; 
+const WORDGUESS_APP_API_URL ='https://guesswordapi.onrender.com'+'/api/process'
 const WordleAssistant = () => {
   const [board, setBoard] = useState(Array.from({ length: 6 }, () => Array(5).fill('')));
   const [statuses, setStatuses] = useState(Array.from({ length: 6 }, () => Array(5).fill('gray')));
