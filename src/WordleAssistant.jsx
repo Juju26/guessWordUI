@@ -10,7 +10,7 @@ const keyboardRows = [
   ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '⌫']
 ];
 
-const WORDGUESS_APP_API_URL = 'http://localhost:8000/api/process'; // [TODO] Replace with actual API URL
+const WORDGUESS_APP_API_URL = 'http://localhost:8080/api/process'; // [TODO] Replace with actual API URL
 
 const WordleAssistant = () => {
   const [board, setBoard] = useState(Array.from({ length: 6 }, () => Array(5).fill('')));
