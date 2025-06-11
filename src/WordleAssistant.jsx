@@ -11,7 +11,7 @@ const keyboardRows = [
 ];
 
 // const WORDGUESS_APP_API_URL = 'http://localhost:8080/api/process'; 
-const WORDGUESS_APP_API_URL ='http://ec2-13-127-31-153.ap-south-1.compute.amazonaws.com:8080/'+'/api/process'
+const WORDGUESS_APP_API_URL ='http://ec2-13-127-31-153.ap-south-1.compute.amazonaws.com:8080'+'/api/process'
 const WordleAssistant = () => {
   const [board, setBoard] = useState(Array.from({ length: 6 }, () => Array(5).fill('')));
   const [statuses, setStatuses] = useState(Array.from({ length: 6 }, () => Array(5).fill('gray')));
